@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 本地运行产物
+*.db
+*.sqlite3
+*.bak-*.docx
+*.bak-*.doc
+
+# 修复时生成的备份文件
+samples/*.bak-*
+
+# macOS
+.DS_Store

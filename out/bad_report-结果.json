@@ -1,0 +1,396 @@
+{
+  "file": "samples/bad_report.docx",
+  "duration_ms": 139.6,
+  "counts": {
+    "错误": 12,
+    "警告": 8,
+    "提示": 1
+  },
+  "issues": [
+    {
+      "rule_id": "R006",
+      "rule_name": "摘要字数应在 200–300 字",
+      "severity": "错误",
+      "message": "摘要正文 74 字，应在 200–300 字之间",
+      "location": "摘要 · 段1「摘　要」",
+      "block_index": 1,
+      "actual": "74 字",
+      "expected": "200–300 字",
+      "fixable": false
+    },
+    {
+      "rule_id": "R017",
+      "rule_name": "摘要中不得出现参考文献引用",
+      "severity": "错误",
+      "message": "摘要中出现文献引用 [1]，摘要不标注引用",
+      "location": "摘要 · 段1「摘　要」",
+      "block_index": 1,
+      "actual": "[1]",
+      "expected": "无引用",
+      "fixable": false
+    },
+    {
+      "rule_id": "R007",
+      "rule_name": "关键词应为 3–5 个，用中文逗号分隔",
+      "severity": "错误",
+      "message": "关键词 2 个（图书管理、Java），应为 3–5 个",
+      "location": "前置部分 · 段3「关键词：图书管理，Java」",
+      "block_index": 3,
+      "actual": "2 个",
+      "expected": "3–5 个",
+      "fixable": false
+    },
+    {
+      "rule_id": "R001",
+      "rule_name": "正文字体应为宋体",
+      "severity": "错误",
+      "message": "正文字体为“等线”，应为“宋体”",
+      "location": "第1章 · 段10「本系统的开发环境为 Windows11 操作系统，开发工…」",
+      "block_index": 10,
+      "actual": "等线",
+      "expected": "宋体",
+      "fixable": true
+    },
+    {
+      "rule_id": "R002",
+      "rule_name": "正文字号应为小四（12 磅）",
+      "severity": "错误",
+      "message": "正文字号为 11.0 磅，应为 12.0 磅（小四）",
+      "location": "第1章 · 段11「系统采用 B/S 三层架构，表现层使用 JSP 页面，业…」",
+      "block_index": 11,
+      "actual": "11.0 磅",
+      "expected": "12.0 磅",
+      "fixable": true
+    },
+    {
+      "rule_id": "R003",
+      "rule_name": "正文行距应为固定值 20 磅",
+      "severity": "错误",
+      "message": "行距为 1.5 磅（1.5 倍行距），应为固定值 20.0 磅",
+      "location": "第1章 · 段12「在数据库设计阶段，系统共设计了图书信息表、读者信息表、借…」",
+      "block_index": 12,
+      "actual": "1.5 磅（1.5 倍行距）",
+      "expected": "固定值 20.0 磅",
+      "fixable": true
+    },
+    {
+      "rule_id": "R010",
+      "rule_name": "图表题注应为黑体五号",
+      "severity": "错误",
+      "message": "图题注格式为 宋体/12.0 磅，应为 黑体 五号",
+      "location": "第1章 · 段17「图1-1 系统总体结构图」",
+      "block_index": 17,
+      "actual": "宋体 / 12.0 磅",
+      "expected": "黑体 / 10.5 磅",
+      "fixable": false
+    },
+    {
+      "rule_id": "R009",
+      "rule_name": "图表编号应按章连续编号",
+      "severity": "错误",
+      "message": "图1-3 编号不连续，此处应为 图1-2",
+      "location": "第1章 · 段19「图1-3 用户登录流程图」",
+      "block_index": 19,
+      "actual": "图1-3",
+      "expected": "图1-2",
+      "fixable": false
+    },
+    {
+      "rule_id": "R010",
+      "rule_name": "图表题注应为黑体五号",
+      "severity": "错误",
+      "message": "图题注格式为 宋体/12.0 磅，应为 黑体 五号",
+      "location": "第1章 · 段19「图1-3 用户登录流程图」",
+      "block_index": 19,
+      "actual": "宋体 / 12.0 磅",
+      "expected": "黑体 / 10.5 磅",
+      "fixable": false
+    },
+    {
+      "rule_id": "R011",
+      "rule_name": "结论字数应在 400–1000 字",
+      "severity": "错误",
+      "message": "结论 39 字，应在 400–1000 字之间",
+      "location": "结论 · 段28「结　论」",
+      "block_index": 28,
+      "actual": "39 字",
+      "expected": "400–1000 字",
+      "fixable": false
+    },
+    {
+      "rule_id": "R012",
+      "rule_name": "参考文献不少于 10 篇",
+      "severity": "错误",
+      "message": "参考文献 5 篇，应不少于 10 篇",
+      "location": "第3章 · 段31「[1] 张三. Java Web 开发实战[M]. 北京…」",
+      "block_index": 31,
+      "actual": "5 篇",
+      "expected": "≥10 篇",
+      "fixable": false
+    },
+    {
+      "rule_id": "R013",
+      "rule_name": "英文文献不少于 2 篇",
+      "severity": "错误",
+      "message": "英文文献 0 篇，应不少于 2 篇",
+      "location": "第3章 · 段31「[1] 张三. Java Web 开发实战[M]. 北京…」",
+      "block_index": 31,
+      "actual": "0 篇",
+      "expected": "≥2 篇",
+      "fixable": false
+    },
+    {
+      "rule_id": "R004",
+      "rule_name": "标题层级不得跳级",
+      "severity": "警告",
+      "message": "标题由 1 级直接跳到 3 级，缺少上级标题",
+      "location": "第1章 · 段7「1.1.1 研究背景」",
+      "block_index": 7,
+      "actual": "1 → 3",
+      "expected": "",
+      "fixable": false
+    },
+    {
+      "rule_id": "R014",
+      "rule_name": "数字与字母应使用 Times New Roman",
+      "severity": "警告",
+      "message": "英文/数字字体为“宋体”，应为 Times New Roman",
+      "location": "第1章 · 段9「系统部署于 Windows11 Professional…」",
+      "block_index": 9,
+      "actual": "宋体",
+      "expected": "Times New Roman",
+      "fixable": false
+    },
+    {
+      "rule_id": "C001",
+      "rule_name": "正文不得出现口语化表述",
+      "severity": "警告",
+      "message": "正文出现口语化表述：笔者认为",
+      "location": "第1章 · 段13「笔者认为该系统具有较高的实用价值，界面友好且操作便捷，适…」",
+      "block_index": 13,
+      "actual": "笔者认为",
+      "expected": "不应出现",
+      "fixable": false
+    },
+    {
+      "rule_id": "R015",
+      "rule_name": "不得出现连续 3 个以上空段落",
+      "severity": "警告",
+      "message": "连续 4 个空段落，应删除或改为段落间距",
+      "location": "第1章 · 段20「」",
+      "block_index": 20,
+      "actual": "4 个",
+      "expected": "≤2 个",
+      "fixable": true
+    },
+    {
+      "rule_id": "R018",
+      "rule_name": "章标题序号应使用阿拉伯数字",
+      "severity": "警告",
+      "message": "章标题使用了中文数字序号，应改为阿拉伯数字（如“第2章”）",
+      "location": "第2章 · 段24「第二章 需求分析」",
+      "block_index": 24,
+      "actual": "第二章 需求分析",
+      "expected": "第N章 …",
+      "fixable": false
+    },
+    {
+      "rule_id": "R005",
+      "rule_name": "一级标题应另起一页",
+      "severity": "警告",
+      "message": "一级标题未设置“段前分页”",
+      "location": "结论 · 段28「结　论」",
+      "block_index": 28,
+      "actual": "未分页",
+      "expected": "段前分页",
+      "fixable": false
+    },
+    {
+      "rule_id": "R005",
+      "rule_name": "一级标题应另起一页",
+      "severity": "警告",
+      "message": "一级标题未设置“段前分页”",
+      "location": "参考文献 · 段30「参考文献」",
+      "block_index": 30,
+      "actual": "未分页",
+      "expected": "段前分页",
+      "fixable": false
+    },
+    {
+      "rule_id": "R008",
+      "rule_name": "目录应由 Word 自动生成",
+      "severity": "警告",
+      "message": "未检测到目录域，目录不是自动生成的（手工目录无法随正文更新）",
+      "location": "全文",
+      "block_index": -1,
+      "actual": "无 TOC 域",
+      "expected": "插入 → 引用 → 目录",
+      "fixable": false
+    },
+    {
+      "rule_id": "R016",
+      "rule_name": "标题序号与题目之间应空一格",
+      "severity": "提示",
+      "message": "标题序号后缺少空格，如“1.1 研究现状”",
+      "location": "第1章 · 段14「1.3设计内容」",
+      "block_index": 14,
+      "actual": "1.3设计内容",
+      "expected": "序号 + 空格 + 题目",
+      "fixable": false
+    }
+  ],
+  "stats": [
+    {
+      "rule_id": "R005",
+      "rule_name": "一级标题应另起一页",
+      "total": 2,
+      "error": 0,
+      "warn": 2,
+      "info": 0
+    },
+    {
+      "rule_id": "R010",
+      "rule_name": "图表题注应为黑体五号",
+      "total": 2,
+      "error": 2,
+      "warn": 0,
+      "info": 0
+    },
+    {
+      "rule_id": "R001",
+      "rule_name": "正文字体应为宋体",
+      "total": 1,
+      "error": 1,
+      "warn": 0,
+      "info": 0
+    },
+    {
+      "rule_id": "R002",
+      "rule_name": "正文字号应为小四（12 磅）",
+      "total": 1,
+      "error": 1,
+      "warn": 0,
+      "info": 0
+    },
+    {
+      "rule_id": "R003",
+      "rule_name": "正文行距应为固定值 20 磅",
+      "total": 1,
+      "error": 1,
+      "warn": 0,
+      "info": 0
+    },
+    {
+      "rule_id": "R004",
+      "rule_name": "标题层级不得跳级",
+      "total": 1,
+      "error": 0,
+      "warn": 1,
+      "info": 0
+    },
+    {
+      "rule_id": "R016",
+      "rule_name": "标题序号与题目之间应空一格",
+      "total": 1,
+      "error": 0,
+      "warn": 0,
+      "info": 1
+    },
+    {
+      "rule_id": "R018",
+      "rule_name": "章标题序号应使用阿拉伯数字",
+      "total": 1,
+      "error": 0,
+      "warn": 1,
+      "info": 0
+    },
+    {
+      "rule_id": "R006",
+      "rule_name": "摘要字数应在 200–300 字",
+      "total": 1,
+      "error": 1,
+      "warn": 0,
+      "info": 0
+    },
+    {
+      "rule_id": "R017",
+      "rule_name": "摘要中不得出现参考文献引用",
+      "total": 1,
+      "error": 1,
+      "warn": 0,
+      "info": 0
+    },
+    {
+      "rule_id": "R007",
+      "rule_name": "关键词应为 3–5 个，用中文逗号分隔",
+      "total": 1,
+      "error": 1,
+      "warn": 0,
+      "info": 0
+    },
+    {
+      "rule_id": "R008",
+      "rule_name": "目录应由 Word 自动生成",
+      "total": 1,
+      "error": 0,
+      "warn": 1,
+      "info": 0
+    },
+    {
+      "rule_id": "R009",
+      "rule_name": "图表编号应按章连续编号",
+      "total": 1,
+      "error": 1,
+      "warn": 0,
+      "info": 0
+    },
+    {
+      "rule_id": "R011",
+      "rule_name": "结论字数应在 400–1000 字",
+      "total": 1,
+      "error": 1,
+      "warn": 0,
+      "info": 0
+    },
+    {
+      "rule_id": "R012",
+      "rule_name": "参考文献不少于 10 篇",
+      "total": 1,
+      "error": 1,
+      "warn": 0,
+      "info": 0
+    },
+    {
+      "rule_id": "R013",
+      "rule_name": "英文文献不少于 2 篇",
+      "total": 1,
+      "error": 1,
+      "warn": 0,
+      "info": 0
+    },
+    {
+      "rule_id": "R014",
+      "rule_name": "数字与字母应使用 Times New Roman",
+      "total": 1,
+      "error": 0,
+      "warn": 1,
+      "info": 0
+    },
+    {
+      "rule_id": "R015",
+      "rule_name": "不得出现连续 3 个以上空段落",
+      "total": 1,
+      "error": 0,
+      "warn": 1,
+      "info": 0
+    },
+    {
+      "rule_id": "C001",
+      "rule_name": "正文不得出现口语化表述",
+      "total": 1,
+      "error": 0,
+      "warn": 1,
+      "info": 0
+    }
+  ]
+}

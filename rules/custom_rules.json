@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "_说明": "scope: body/heading/caption/reference/all/section；type: text/format/length/count；severity: 错误/警告/提示",
+  "params": {},
+  "rules": [
+    {
+      "id": "C001",
+      "name": "正文不得出现口语化表述",
+      "type": "text",
+      "scope": "body",
+      "severity": "警告",
+      "enabled": true,
+      "message": "正文出现口语化表述：{match}",
+      "pattern": "笔者认为|我认为|我觉得|众所周知",
+      "mode": "forbid"
+    },
+    {
+      "id": "C002",
+      "name": "摘要需说明研究方法",
+      "type": "text",
+      "scope": "section",
+      "severity": "提示",
+      "enabled": true,
+      "message": "摘要中未见对研究方法/技术路线的说明",
+      "pattern": "方法|算法|模型|框架|设计",
+      "mode": "require",
+      "section": "摘要"
+    },
+    {
+      "id": "C003",
+      "name": "参考文献需标注文献类型",
+      "type": "text",
+      "scope": "reference",
+      "severity": "警告",
+      "enabled": true,
+      "message": "参考文献缺少文献类型标识（如 [J]/[M]/[D]）",
+      "pattern": "\\[(J|M|D|C|N|R|S|P|EB/OL)\\]",
+      "mode": "require"
+    }
+  ]
+}
